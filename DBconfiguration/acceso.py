@@ -155,23 +155,23 @@ def menu():
 
         elif opcion == "2":
             print("Insertar datos")
-            nombreNuevo = input("Ingresa el nombre del nuevo usuario")
-            correo = input("Ingresa el correo")
-            telefono = input("Ingresa el telefono")
-            fecha_nacimiento = input("Ingresa la fecha de nacimiento")
-            usuario = input("Ingresa nombre de usuario nuevo")
-            contra = input("Ingresa contraseña nueva")
+            nombreNuevo = input("Ingresa el nombre del nuevo usuario: ")
+            correo = input("Ingresa el correo: ")
+            telefono = input("Ingresa el telefono: ")
+            fecha_nacimiento = input("Ingresa la fecha de nacimiento: ")
+            usuario = input("Ingresa nombre de usuario nuevo: ")
+            contra = input("Ingresa contraseña nueva: ")
             insertar_usuario(nombreNuevo, correo, telefono, fecha_nacimiento, usuario,contra)
         
         elif opcion == "3":
             print("Actualizar correo")
-            id_usuario = input("Comparte el id del usuario al que deseas modificar")
-            correoNuevo = input("Comparte el correo nuevo")
+            id_usuario = input("Comparte el id del usuario al que deseas modificar: ")
+            correoNuevo = input("Comparte el correo nuevo: ")
             actualizar_correo(id_usuario, correoNuevo)
 
         elif opcion == "4":
             print("Eliminación de Usuario")
-            id_usuario = input("Comparte el id del usuario que deseas eliminar")
+            id_usuario = input("Comparte el id del usuario que deseas eliminar: ")
             eliminar_usuario(id_usuario)
 
         elif opcion == "0":
